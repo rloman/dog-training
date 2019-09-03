@@ -1,5 +1,7 @@
 package nl.itacademy.dogtraining.forloops;
 
+import nl.itacademy.dogtraining.model.Dog;
+
 public class Application {
 
     public static void main(String[] args) {
