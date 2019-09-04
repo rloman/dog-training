@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.builder.eggbox;
+package nl.itacademy.dogtraining.designpatterns.delegate;
 
 import java.util.ArrayList;
 import java.util.List;

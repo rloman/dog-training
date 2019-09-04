@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.builder.eggbox;
+package nl.itacademy.dogtraining.designpatterns.delegate;
 
 public class App {
 
