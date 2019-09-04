@@ -1,4 +1,4 @@
-package nl.itacademy.ocp.builder;
+package nl.itacademy.ocp.designpatterns.builder;
 
 public class App {
 
