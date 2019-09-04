@@ -6,7 +6,5 @@ public class App {
         Animal a = new Dog();
 
         a.sound();
-
-
     }
 }

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Airplane implements Iterable<Wing> {
+public class Airplane {
 
     private String type;
     private String brand;
@@ -46,11 +46,6 @@ public class Airplane implements Iterable<Wing> {
 
     public List<Wing> getWings() {
         return wings;
-    }
-
-    @Override
-    public Iterator<Wing> iterator() {
-        return this.wings.iterator();
     }
 
     public static class AirplaneBuilder {

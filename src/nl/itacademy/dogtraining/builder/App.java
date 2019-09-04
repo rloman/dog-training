@@ -17,12 +17,5 @@ public class App {
         System.out.println(plane2);
 
         System.out.println(plane2.getWings());
-
-        for(Wing wing: plane2) {
-            System.out.println(wing.getLength());
-        }
-
-
-
     }
 }

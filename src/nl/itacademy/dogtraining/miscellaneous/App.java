@@ -10,7 +10,7 @@ public class App {
 
     public static void bar(boolean isOn) {
 
-        if(isOn) {
+        if(isOn = true) { // !!!! PAS op dit is geen test maar een assignment!!!
             System.out.println("TV gaat on!!!");
         }
         else {
