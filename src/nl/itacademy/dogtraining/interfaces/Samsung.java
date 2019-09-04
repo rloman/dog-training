@@ -9,6 +9,8 @@ public class Samsung implements Televisie {
     public void on() {
         this.on = true;
         System.out.println("Samsung TV is now on");
+
+        ditIsTochEenMethode(); // default method
     }
 
     @Override

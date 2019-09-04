@@ -6,4 +6,8 @@ public interface Televisie {
     void off(); // public abstract
     int switchChannel(int newChannel);
     void changeVolume(boolean increase);
+
+    default void ditIsTochEenMethode() {
+        System.out.println("Default methode aangeroepen in Televisie INTERFACE");
+    }
 }
