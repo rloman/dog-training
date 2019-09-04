@@ -1,9 +1,9 @@
 package nl.itacademy.dogtraining.polymorfism;
 
-import nl.itacademy.dogtraining.designpatterns.factory.Animal;
-import nl.itacademy.dogtraining.designpatterns.factory.Cow;
-import nl.itacademy.dogtraining.designpatterns.factory.Goat;
-import nl.itacademy.dogtraining.designpatterns.factory.Horse;
+import nl.itacademy.ocp.designpatterns.factory.Animal;
+import nl.itacademy.ocp.designpatterns.factory.Cow;
+import nl.itacademy.ocp.designpatterns.factory.Goat;
+import nl.itacademy.ocp.designpatterns.factory.Horse;
 
 public class App {
 

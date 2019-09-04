@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.miscellaneous.innerclasses;
+package nl.itacademy.ocp.innerclasses;
 
 public class Enclosing {
 
@@ -19,7 +19,7 @@ public class Enclosing {
         Enclosing enclosing = new Enclosing();
         enclosing.age++;
         Enclosing.Nested.demo();
-        
+
         System.out.println(nested.price);
     }
 }

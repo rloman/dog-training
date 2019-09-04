@@ -1,6 +1,6 @@
 package nl.itacademy.dogtraining.polymorfism;
 
-import nl.itacademy.dogtraining.designpatterns.factory.Animal;
+import nl.itacademy.ocp.designpatterns.factory.Animal;
 
 public final class AnimalFeeder {
 

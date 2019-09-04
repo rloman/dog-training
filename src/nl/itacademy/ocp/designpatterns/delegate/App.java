@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.designpatterns.delegate;
+package nl.itacademy.ocp.designpatterns.delegate;
 
 public class App {
 

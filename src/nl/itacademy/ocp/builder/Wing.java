@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.builder;
+package nl.itacademy.ocp.builder;
 
 public class Wing {
 

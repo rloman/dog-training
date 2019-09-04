@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.designpatterns.factory;
+package nl.itacademy.ocp.designpatterns.factory;
 
 public class Horse extends Animal {
 

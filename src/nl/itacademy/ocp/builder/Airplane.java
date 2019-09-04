@@ -1,7 +1,6 @@
-package nl.itacademy.dogtraining.builder;
+package nl.itacademy.ocp.builder;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 public class Airplane {
