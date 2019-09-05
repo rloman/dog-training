@@ -3,7 +3,11 @@ package nl.itacademy.ocp.generics.demopage113ocpbook;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Box <T> {
+public class Box<T> {
+
+    public static void main(String[] args) {
+        getE(3.5);
+    }
 
     // what you cant do
     //1. Call the constructor of T. new T() is impossible since you would create a new Object (since page 112/112)
@@ -63,10 +67,10 @@ public class Box <T> {
     //!!! Normally we place static vars and fields in the top of the file. for the explaination we folllow
     // the table on page 113 of the book and since this is item 5 it is here below ...
 
+    // generic static method
+    public static <E extends Number> void  getE(E e) {
+        System.out.println("I am running a static generic method");
 
-
-
-
-
-
+        System.out.println(e.getClass());
+    }
 }
