@@ -1,5 +1,7 @@
 package nl.itacademy.ocp.recursion.reclist;
 
+import java.util.Optional;
+
 public class RecList {
 
     private Object head;
@@ -34,19 +36,17 @@ public class RecList {
         }
     }
 
-    // refactor to Optional rloman
-    public Object get(Object o) {
+    public Optional<Object> get(Object o) {
         if(head == null) {
-            return null;
+            return Optional.empty();
         }
         else {
             if(head.equals(o)) {
-                return head;
+                return Optional.of(head);
             }
             else {
                 return tail.get(o);
             }
         }
-
     }
 }
