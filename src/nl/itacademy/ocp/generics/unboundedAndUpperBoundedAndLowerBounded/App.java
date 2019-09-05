@@ -6,19 +6,27 @@ import java.util.List;
 public class App {
 
     public static void main(String[] args) {
-        List<Dog> dogs = new ArrayList<>();
 
         List<Puppy> puppies = new ArrayList<>();
 
         List<Animal> animals = new ArrayList<>();
 
-//        AnimalDoctor.cureAnimalsUnbounded(dogs); // fails and that is because List<Animal> != List<Dog> simple as that!
+//        animals.add(new Cat()); // legal
+
+        List<Dog> dogs = new ArrayList<>();
+        // AnimalDoctor.cureAnimalsUnbounded(dogs); // fails and that is because List<Animal> != List<Dog> simple as that!
+        AnimalDoctor.cureAnimalsUnbounded(animals);
 
 
 
         // rocks. And because we said to
         // the receiving method that it is ok to have a List with subtypes of Animal (here Dog)
         AnimalDoctor.cureAnimalsUpperbounded(dogs);
+        AnimalDoctor.cureAnimalsUpperbounded(animals);
+        AnimalDoctor.cureAnimalsUpperbounded(puppies);
+//        AnimalDoctor.cureAnimalsUpperbounded(new ArrayList<String>()); // fails
+
+
 
 
 
