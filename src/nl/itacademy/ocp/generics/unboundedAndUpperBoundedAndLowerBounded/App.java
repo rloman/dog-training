@@ -11,10 +11,10 @@ public class App {
 
         List<Animal> animals = new ArrayList<>();
 
-//        animals.add(new Cat());
+//        animals.add(new Cat()); // legal
 
         List<Dog> dogs = new ArrayList<>();
-        AnimalDoctor.cureAnimalsUnbounded(dogs); // fails and that is because List<Animal> != List<Dog> simple as that!
+        // AnimalDoctor.cureAnimalsUnbounded(dogs); // fails and that is because List<Animal> != List<Dog> simple as that!
         AnimalDoctor.cureAnimalsUnbounded(animals);
 
 

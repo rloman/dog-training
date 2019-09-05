@@ -45,13 +45,13 @@ public final class AnimalDoctor {
         // Can we add an Object
         Object o = new Object();
 
-        dogsOrHigherHierarchy.add(o); // of course not!
+        // dogsOrHigherHierarchy.add(o); // of course not!
         // since we are having a List of Dogs. Adding a type higher in the hierarchy will fail!!!
 
         // Can we add an Animal?
         Animal a = new Animal();
 
-        dogsOrHigherHierarchy.add(a); // again, of course not!
+        // dogsOrHigherHierarchy.add(a); // again, of course not!
         // since we are having a List of Dogs. Adding a type higher in the hierarchy will fail!!!
 
 
