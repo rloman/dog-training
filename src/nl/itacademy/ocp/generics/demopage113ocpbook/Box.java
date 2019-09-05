@@ -20,7 +20,7 @@ public class Box <T> {
 
         // ok
         int[] numbers = new int[3]; //ok
-        T[] arrayOfT = new T[3]; // fails and we now know why
+//        T[] arrayOfT = new T[3]; // fails and we now know why
     }
 
     //3. Call instanceof
