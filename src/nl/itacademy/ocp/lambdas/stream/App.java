@@ -14,6 +14,18 @@ public class App {
         //Stream<String[]>
         Stream<String[]> temp = Arrays.stream(data);
 
+
+        // languit
+        Arrays.asList(data).stream().flatMap(element -> Arrays.asList(element).stream()).forEach(element -> {
+            System.out.println(element);
+        });
+
+        // korter, anders!
+        Arrays.asList(data).stream().flatMap(element -> Arrays.stream(element)).forEach(System.out::println);
+
+
+        /* hieronder code vanuit de mkyong site =>
+
         //Stream<String>, GOOD!
         Stream<String> stringStream = temp.flatMap(x -> Arrays.stream(x));
 
@@ -30,8 +42,7 @@ public class App {
 
         stream.forEach(System.out::println);
 
-        // uitzoeken voor Stijn!!! (na de break) inclusief List::remove(Object)
-        List<String> someNames = new ArrayList();
+        */
 
     }
 }
