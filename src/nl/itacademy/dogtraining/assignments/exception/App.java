@@ -21,7 +21,7 @@ public class App {
             return true;
         }
         catch(NumberFormatException nfe) {
-            
+
             return false;
         }
     }
