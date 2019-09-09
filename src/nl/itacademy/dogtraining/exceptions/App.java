@@ -5,25 +5,35 @@ public class App {
 
     public static void main(String[] args) {
 
+        String s = null;
+
+        System.out.println(s.length());
+
+
         try {
             int result = divide(6, 3);
             System.out.println(result);
         } catch (KasteelException ke) {
-            System.out.println("GEvangen kasteel Exc");
+            System.out.println("Gevangen kasteel Exc");
         }
 
         try {
-            int result = divide(3, 0);
+            int result = divide(-3, 0);
             System.out.println(result);
-        } catch (KasteelException e) {
-            System.out.println("GEvangen kasteel Exc");
+        } catch (KasteelException | ArithmeticException | IllegalArgumentException alles) {
+            System.out.println("Diverse types gevangen!");
+            System.out.println(alles.getMessage());
         }
-
-        /*
-        catch(ArithmeticException ae) {
-            System.out.println("Oei ... dat ging net goed!");
+        catch(Exception unknownType) {
+            // bijna crimineel!
         }
-        */
+        finally {
+            // in het wild bedoeld voor het sluiten van bestanden en zo ...
+            System.out.println("Einde van de catch blocks. Dus dit block wordt ALTIJD uitgevoerd, " +
+                    "dus ook als de try successful is" +
+                    "," +
+                    "behalve als ik de stroom uitzet of System.exit() doe!!!");
+        }
 
 
         System.out.println("Einde programma");
@@ -34,7 +44,13 @@ public class App {
         if (b != 0) {
             return a / b;
         } else {
-            throw new KasteelException();
+            if (a == -1) {
+                throw new KasteelException();
+            }
+            else {
+                throw new ArithmeticException("Ongeldig want a != -1 of een andere tekst!");
+            }
+
         }
     }
 }
