@@ -1,5 +1,6 @@
 package nl.itacademy.dogtraining.datetime;
 
+import java.time.Duration;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
@@ -8,7 +9,18 @@ import java.time.temporal.ChronoUnit;
 public class App {
 
     public static void main(String[] args) {
-        demoLocalDateTime();
+        demoAssignmentLocalDateTime();
+
+    }
+
+    public static void demoAssignmentLocalDateTime() {
+
+        LocalDateTime ray = LocalDateTime.of(1968, 8,9, 15,30);
+        long minutes = ChronoUnit.MINUTES.between(ray, LocalDateTime.now());
+
+        Duration duration = Duration.between(ray, LocalDateTime.now());
+
+        System.out.println(LocalDateTime.now().plus(duration));
 
     }
 
