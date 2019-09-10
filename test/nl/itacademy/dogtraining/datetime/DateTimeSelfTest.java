@@ -2,6 +2,7 @@ package nl.itacademy.dogtraining.datetime;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.time.*;
 import java.time.temporal.ChronoUnit;
@@ -28,6 +29,11 @@ public class DateTimeSelfTest {
         LocalDate now = LocalDate.now();
 
         System.out.println(now);
+    }
+
+    @Test
+    public void testFormat(){
+
     }
 
     @Test
