@@ -56,6 +56,7 @@ public class App {
             System.out.println(names);
 
             Collections.sort(names, Comparator.reverseOrder());
+            Collections.reverse(names);
             System.out.println(names);
 
             System.exit(0);
