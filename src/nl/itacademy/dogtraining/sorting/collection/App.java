@@ -12,27 +12,26 @@ public class App {
 
         numbers.addAll(Arrays.asList(-10, 12, 5, 3, 24, 0));
 
-        // array
-//        int[] array = {0,1,2,3};
+       System.out.println(numbers);
+
+        Collections.sort(numbers); // sorts on natural order
 
         System.out.println(numbers);
 
-        Collections.sort(numbers);
-
-        System.out.println(numbers);
-
-        // reverse sort
+        // reverse sort using an OCP CONStruct, a comparator
         Collections.sort(numbers, (a,b) -> {
             return b-a;
         });
 
-        Collections.reverse(numbers);
+        Collections.reverse(numbers); // reverses
 
         Collections.shuffle(numbers);
 
         System.out.println(numbers);
 
         numbers.stream().filter(n -> n > 0).forEach(System.out::println);
+
+		// OCP
 
         List<Motorbike> motors = new ArrayList<>();
         motors.addAll(Arrays.asList(new Motorbike(), new Motorbike(), new Motorbike()));
@@ -44,6 +43,7 @@ public class App {
 }
 
 
+// OCP
 class Motorbike {
     private int cc = (int) (Math.random() * 1000 +50);
 
