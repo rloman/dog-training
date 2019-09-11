@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.access;
+package nl.itacademy.dogtraining.miscellaneous.access;
 
 class UnreachablePersonOutOfThisPackage {
 

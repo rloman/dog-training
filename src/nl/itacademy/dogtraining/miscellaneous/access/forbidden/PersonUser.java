@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.access.forbidden;
+package nl.itacademy.dogtraining.miscellaneous.access.forbidden;
 
 
 public class PersonUser {
