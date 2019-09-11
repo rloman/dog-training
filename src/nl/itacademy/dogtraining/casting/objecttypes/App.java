@@ -7,13 +7,30 @@ public class App {
 
     public static void main(String[] args) {
 
+        demoInstanceOfCompileError();
+
+    }
+
+    private static void demoInstanceOfCompileError() {
+
+        Cat c = new Cat();
+//        if(c instanceof Dog) { // compile error!!!
+
+//        }
+
+//        if(c instanceof String) { // also a compile error!
+
+//        }
+
+    }
+
+    public static void demoListMain() {
         List<Animal> animals = new ArrayList<>();
         animals.add(new Dog());
         animals.add(new Cat());
         animals.add(new Zebra());
 
         demoList(animals);
-
     }
 
     public static void demoList(List<Animal> animals) {
