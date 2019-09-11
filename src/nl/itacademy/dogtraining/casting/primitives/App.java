@@ -1,4 +1,4 @@
-package nl.itacademy.dogtraining.casting;
+package nl.itacademy.dogtraining.casting.primitives;
 
 import java.math.BigInteger;
 
