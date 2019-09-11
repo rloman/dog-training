@@ -10,6 +10,5 @@ public class App {
         for(int i = 0;i<16;i++) {
             new Thread(new Visitor(i, a)).start();
         }
-
     }
 }

@@ -3,6 +3,7 @@ package nl.itacademy.ocp.concurrency.cyclicbarrier.achtbaan;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
 
+// might refactor this to a Singleton ...
 public class Achtbaan {
 
 
