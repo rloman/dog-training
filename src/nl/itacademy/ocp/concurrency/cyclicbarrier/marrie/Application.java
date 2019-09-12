@@ -1,4 +1,4 @@
-package nl.itacademy.ocp.concurrency.cyclicbarrier;
+package nl.itacademy.ocp.concurrency.cyclicbarrier.marrie;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
