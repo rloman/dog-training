@@ -24,6 +24,7 @@ public final class Algorithms {
     }
 
 
+	// recursive solution
     public static int josephus(int n, int k) {
         if (n == 1) {
             return 1;
