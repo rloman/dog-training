@@ -13,6 +13,15 @@ public final class Algorithms {
         return n * (n - 1) / 2;
     }
 
+    public static int fac(int n) {
+        if(n == 0) {
+            return 1;
+        }
+        else {
+            return n * fac(n-1);
+        }
+    }
+
 
     public static int josephusRaymie(int aantal) {
 
