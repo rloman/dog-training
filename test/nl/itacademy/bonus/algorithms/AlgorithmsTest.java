@@ -3,7 +3,16 @@ package nl.itacademy.bonus.algorithms;
 import org.junit.Assert;
 import org.junit.Test;
 
+
+
 public class AlgorithmsTest {
+
+    @Test
+    public void testJosLog() {
+        int restul = Algorithms.josephusRaymie(3);
+
+        System.out.println(restul);
+    }
 
 
     @Test
@@ -17,6 +26,7 @@ public class AlgorithmsTest {
     public void testJosephus() {
         Assert.assertEquals(7, Algorithms.josephus(7, 2 )); // 2th person killed, n people total
 
+        Assert.assertEquals(3, Algorithms.josephus(5, 2 )); // 2th person killed, n people total
         Assert.assertEquals(13, Algorithms.josephus(14, 2 )); // 2th person killed, n people total
     }
 }

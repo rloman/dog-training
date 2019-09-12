@@ -14,10 +14,22 @@ public final class Algorithms {
     }
 
 
+    public static int josephusRaymie(int aantal) {
+
+        int exp = (int) (Math.log(aantal) / Math.log(2));
+
+        int rest = aantal - (int) (Math.pow(2, exp));
+
+        return rest * 2 + 1;
+    }
+
+
+	// recursive solution
     public static int josephus(int n, int k) {
         if (n == 1) {
             return 1;
         } else {
+
             /* The position returned by josephus(n - 1, k)
     is adjusted because the recursive call
     josephus(n - 1, k) considers the original
