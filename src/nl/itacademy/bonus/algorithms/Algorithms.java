@@ -9,6 +9,10 @@ public final class Algorithms {
         return n * (n + 1) / 2;
     }
 
+    public static int graph(int n) {
+        return n * (n - 1) / 2;
+    }
+
 
     public static int josephus(int n, int k) {
         if (n == 1) {
