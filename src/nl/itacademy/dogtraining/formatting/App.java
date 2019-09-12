@@ -15,8 +15,7 @@ public class App {
 
         System.out.println(formattedDateTime);
 
-
-        dateTimeFormatter = DateTimeFormatter.ISO_DATE_TIME;
+        dateTimeFormatter = DateTimeFormatter.ISO_LOCAL_DATE_TIME;
 
         System.out.println(now.format(dateTimeFormatter));
 
@@ -28,7 +27,9 @@ public class App {
 
         System.out.println(zonedDateTime.format(DateTimeFormatter.ISO_INSTANT));
 
+
         // NB: leg op de apostrof
+        // ISO8601 format
         System.out.println(zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SX:00")));
 
         // the OFFICIAL ISO8601
@@ -41,6 +42,8 @@ public class App {
         // and for my nephews in New Zeeland
         zonedDateTime = LocalDateTime.now().atZone(ZoneId.of("Pacific/Auckland"));
         System.out.println(zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ssX:00")));
+
+        System.exit(0);
 
         Instant newZeeland = LocalDateTime.now().toInstant(ZoneOffset.ofHours(12));
 
