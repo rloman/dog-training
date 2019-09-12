@@ -29,12 +29,10 @@ public class App {
         List<Integer> numbers = new ArrayList<>();
         numbers.addAll(Arrays.asList(0,1,1,2,3,5,8,13,21)); //54
 
-        // Iets als dit!!!
-        numbers.stream().collect(ArrayList::new, List<Integer>::add, (left, right) -> {
-            left.addAll(right);
+        ArrayList<Integer>  result =  numbers.stream().collect(ArrayList::new, ArrayList::add, ArrayList::addAll);
 
-            return left;
-        });
+
+        System.out.println(result);
 
         List<Integer> squares = numbers
                 .stream()
